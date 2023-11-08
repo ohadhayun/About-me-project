@@ -1,0 +1,17 @@
+<div class="card" >
+  <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ data.title }}</h5>
+    <p class="card-text"> {{ data.description }} </p>
+    <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+    <a class="btn btn-primary" href={{data.link}} target="_blank"
+      onclick="window.open(this.href); return false;">Open link</a>
+
+  </div>
+
+</div>

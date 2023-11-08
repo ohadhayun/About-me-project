@@ -1,0 +1,44 @@
+<div class="container" [ngStyle]="{ backgroundColor: '#ece2d7', paddingTop: '80px'}">
+  <div class="row" >
+    <div class="col-2"></div>
+    <div class="col-4">
+      <h6 class="small-h6 no-top-margin" [ngStyle]="{fontSize: '1.75rem'}">Heya!</h6>
+      <h2 class="hey-i-m-marie-display-headline" [ngStyle]="{
+        textTransform: 'uppercase',
+        marginTop: '2%',
+        fontSize: '8.5rem',
+        lineHeight: '95%'}">I'm Ohad.</h2>
+
+      <p [ngStyle]="{fontSize: '1.3rem'}">My name is Ohad, graduate from Experis college with a course that long 1400
+        hours and worked at Matrix/Cambium.
+        I received a certificate of appreciation for my multiple volunteering in my
+        city, I'm a diligent, responsible, caring sociable guy.
+        <br>
+        2023-2021 – Full Stack developer at Cambium LTD. <br>
+        • Front End Development Using TypeScript and Angular. <br>
+        • Back End Development Using NodeJs, MongoDB. <br>
+        • Working with,Jira GitLab and AWS,system and site improvements, and adding new features. <br>
+        • Direct collaboration with product managers, UX / UI designers, work under pressure, and multitask. <br>
+
+
+      </p>
+    </div>
+
+    <div class="col-4" [ngStyle]="    {border: 'double'}">
+      <img [ngStyle]="{ maxWidth: '550px'}" src="https://i.ibb.co/4VBDfdz/ohadimageproject.jpg" alt="">
+    </div>
+
+
+    <div class="col-2"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md" *ngFor="let item of data" [ngStyle]="{ marginTop: '20px', paddingBottom:'60px'}">
+      <app-card [data]="item"></app-card>
+    </div>
+
+  </div>
+</div>

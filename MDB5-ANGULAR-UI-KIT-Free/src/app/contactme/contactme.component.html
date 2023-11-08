@@ -1,0 +1,39 @@
+<div class="row" [ngStyle]="{paddingTop: '80px'}">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <form>
+      <!-- First Name input -->
+      <mdb-form-control class="mb-4">
+        <input mdbInput type="text" id="form4Example1" class="form-control" [(ngModel)]="firstnameInput"
+          name="firstnameInput" required />
+        <label mdbLabel class="form-label" for="form4Example1">First Name</label>
+      </mdb-form-control>
+
+      <!-- Last Name input -->
+      <mdb-form-control class="mb-4">
+        <input mdbInput type="text" id="form4Example1" class="form-control" [(ngModel)]="lastnameInput"
+          name="lastnameInput" required />
+        <label mdbLabel class="form-label" for="form4Example1">Last Name</label>
+      </mdb-form-control>
+
+      <!-- Email input -->
+      <mdb-form-control class="mb-4">
+        <input mdbInput type="email" id="form4Example2" class="form-control" [(ngModel)]="emailInput" name="myInput"
+          required />
+        <label mdbLabel class="form-label" for="form4Example2">Email address</label>
+      </mdb-form-control>
+
+      <!-- Number input -->
+      <mdb-form-control class="form-outline mb-4">
+        <input mdbInput type="number" id="form6Example6" class="form-control" [(ngModel)]="phoneInput" name="phoneInput"
+          required />
+        <label mdbLabel class="form-label" for="form6Example6">Phone</label>
+      </mdb-form-control>
+
+      <!-- Submit button -->
+      <button mdbRipple type="button" class="btn btn-primary btn-block mb-4" (click)="sendForm()">Send</button>
+    </form>
+
+  </div>
+  <div class="col-3"></div>
+</div>
